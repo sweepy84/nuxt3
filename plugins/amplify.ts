@@ -1,6 +1,9 @@
 import { defineNuxtPlugin } from '#app'
 
-import { Amplify } from 'aws-amplify'
+import { Amplify } from '@aws-amplify/core';
+// import { Amplify as A } from 'aws-amplify'
+// console.log(Auth)
+// let Amplify = await import('aws-amplify');
 export default defineNuxtPlugin(() => {
     // if(process.client) {
     Amplify.configure({
